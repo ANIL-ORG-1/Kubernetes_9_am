@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+ name: jboss-pod
+ labels:
+  type: webserver
+  author: intelliqit
+spec:
+ containers:
+  - name: myjboss
+    image: jboss/keycloak
+    
+

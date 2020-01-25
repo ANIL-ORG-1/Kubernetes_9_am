@@ -1,0 +1,14 @@
+---
+version: '3'
+services:
+ mydb:
+  image: postgres
+  environment:
+   POSTGRES_PASSWORD: intelliq
+
+ webserver:
+  image: nginx
+  ports:
+   - 8888:80
+  deploy:
+   replicas: 2
